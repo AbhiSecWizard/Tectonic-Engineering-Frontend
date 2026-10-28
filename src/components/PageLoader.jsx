@@ -7,7 +7,7 @@ const PageLoader = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 900);
 
     return () => clearTimeout(timer);
   }, []);
@@ -24,7 +24,7 @@ const PageLoader = () => {
         />
 
         <div className="h-1 w-32 overflow-hidden rounded-full bg-slate-200">
-          <div className="h-full w-full origin-left animate-[loading_1s_ease-in-out_infinite] rounded-full bg-primary" />
+          <div className="h-full w-full origin-left animate-[loading_2s_ease-in-out_infinite] rounded-full bg-primary" />
         </div>
       </div>
     </div>
