@@ -42,7 +42,8 @@
 }
 
 
-
+/* ----------------------- Hero section Styling--------------------------------- */
+/* ------------------------Hero section Styling-------------------------------- */
 
 .hero-section {
   position: relative;
@@ -128,7 +129,7 @@
   width: fit-content;
   margin-top: 32px;
   padding: 14px 24px;
-  border-radius: 6px;
+  border-radius: 3px;
   background-color: #fbbf24;
   color: #172033;
   font-weight: 700;
