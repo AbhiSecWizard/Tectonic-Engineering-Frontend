@@ -1,10 +1,14 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import PageLoader from "./components/PageLoader";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
+import AboutTeam from "./pages/AboutTeam";
+import IntroductionAbout from "./pages/IntroductionAbout";
+
 
 function App() {
+console.log(window.location.pathname);
   return (
     <BrowserRouter>
       <PageLoader />
@@ -12,6 +16,8 @@ function App() {
       {/* Your Routes go here */}
       <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/about/about-team" element={<AboutTeam/>}/>
+          <Route path="/about/about-introduction" element={<IntroductionAbout/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

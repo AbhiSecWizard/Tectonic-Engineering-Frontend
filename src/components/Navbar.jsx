@@ -18,10 +18,11 @@ const links = [
 
   {
     name: "About Us",
-    path: "/about-us",
+    path:"about",
+
     children: [
-      { name: "Introduction", path: "/about-us/introduction" },
-      { name: "Our Team", path: "/about-us/team" },
+      { name: "Introduction", path: "/about/about-introduction" },
+      { name: "Our Team", path: "/about/about-team" },
     ],
   },
 
