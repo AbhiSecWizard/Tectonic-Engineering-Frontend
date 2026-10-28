@@ -66,13 +66,12 @@ const Navbar = () => {
       <div className="bg-primary text-white">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 md:px-8">
           <a
-            href="mailto:xyz@gmail.com"
+            href="mailto:tectoniceng@outlook.com"
             className="flex items-center gap-2 text-xs sm:text-sm"
           >
             <FaEnvelope className="shrink-0" />
-            <span>xyz@gmail.com</span>
+            <span>tectoniceng@outlook.com</span>
           </a>
-
           <div className="flex items-center gap-3 sm:gap-4">
             {socialLinks.map(({ icon: Icon, label, url }) => (
               <a
