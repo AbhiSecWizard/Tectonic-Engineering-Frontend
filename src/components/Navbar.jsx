@@ -29,13 +29,11 @@ const links = [
     name: "Services",
     path: "/services",
     children: [
-      { name: "Steel Detailing", path: "/services/steel-detailing" },
-      { name: "Rebar Detailing", path: "/services/rebar-detailing" },
-      { name: "Structural Design", path: "/services/structural-design" },
-      { name: "Structural Drafting", path: "/services/structural-drafting" },
-      { name: "Value Engineering", path: "/services/value-engineering" },
-      { name: "Cost Optimization", path: "/services/cost-optimization" },
-    ],
+      { name: "Structural Design & Drafting", path: "/services/steel-detailing-drafting" },
+      { name: "Peer Review & Value Engineering", path: "/services/value-engineering" },
+      { name: "Structural Audit & Repair", path: "/services/structural-audit-repair" },
+      { name: "Structural Steel Detailing", path: "/services/structural-steel-detailing"},
+               ],
   },
 
   { name: "Projects", path: "/projects" },
