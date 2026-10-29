@@ -65,7 +65,7 @@ const IntroductionAbout = () => {
               Departments, Development Authorities and Public Sector
               Undertakings across India.
             </p>
-
+           
             <ul className="grid sm:grid-cols-2 gap-3 mb-8">
               {highlights.map((item) => (
                 <li key={item} className="flex items-start gap-2 text-body">
