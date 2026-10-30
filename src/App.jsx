@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import PageLoader from "./components/PageLoader";
 import Home from "./pages/Home";
@@ -10,6 +10,13 @@ import StructuralSteelDetailing from "./components/StructuralSteelDetailing";
 import StructuralDesignDrafting from "./components/StructuralDesignDrafting";
 import StructuralAuditRepair from "./components/StructuralAuditRepair";
 import PeerReviewValueEngineering from "./components/PeerReviewValueEngineering";
+import Projects from "./pages/Projects";
+import Sectors from "./components/Sectors";
+import Career from "./pages/Career";
+import Clients from "./pages/Clients";
+import Blog from "./pages/Blog";
+import Gallery from "./pages/Gallery";
+import ContactUs from "./pages/ContactUs";
 
 
 function App() {
@@ -29,8 +36,16 @@ console.log(window.location.pathname);
           <Route path="/service/structural-steel-detailing" element={<StructuralSteelDetailing/>}/>
           <Route path="/service/structural-designing-drafting" element={<StructuralDesignDrafting/>}/>
           <Route path="/service/structural-audit-repair" element={<StructuralAuditRepair/>} />
-          <Route path="/service/peerreview-value-engineering" element={<PeerReviewValueEngineering/>}/>
-      </Routes>
+          <Route path="/service/peer-review-value-engineering" element={<PeerReviewValueEngineering/>}/>
+          {/* projects components */}
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/sectors" element={<Sectors/>}/>
+          <Route path="/career" element={<Career/>}/>
+          <Route path="/clients" element={<Clients/>}/>
+          <Route path="/blog" element={<Blog/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/contact-us" element={<ContactUs/>}/>
+        </Routes>
       <Footer/>
     </BrowserRouter>
   );

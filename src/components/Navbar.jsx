@@ -11,11 +11,6 @@ import {
 } from "react-icons/fa";
 import DropdownMenu from "./DropdownMenu";
 
-/*
-  path  -> used for active-state matching (and as the React key)
-  to    -> optional: where clicking the parent label goes (defaults to path)
-  items -> optional: makes the entry a dropdown
-*/
 const NAV_LINKS = [
   { name: "Home", path: "/" },
   {
@@ -31,7 +26,7 @@ const NAV_LINKS = [
     name: "Services",
     items: [
       { name: "Structural Design & Drafting", path: "/service/structural-steel-detailing"  },
-      { name: "Peer Review & Value Engineering", path:"/service/structural-designing-drafting"  },
+      { name: "Peer Review & Value Engineering", path:"/service/peer-review-value-engineering"},
       { name: "Structural Audit & Repair", path: "/service/structural-audit-repair" },
       { name: "Structural Steel Detailing", path: "/service/structural-steel-detailing" },
     ],
