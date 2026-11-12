@@ -17,10 +17,10 @@ import Clients from "./pages/Clients";
 import Blog from "./pages/Blog";
 import Gallery from "./pages/Gallery";
 import ContactUs from "./pages/ContactUs";
+import ProjectDetails from "./components/ProjectDetails";
 
 
 function App() {
-console.log(window.location.pathname);
   return (
     <BrowserRouter>
       <PageLoader />
@@ -39,6 +39,8 @@ console.log(window.location.pathname);
           <Route path="/service/peer-review-value-engineering" element={<PeerReviewValueEngineering/>}/>
           {/* projects components */}
           <Route path="/projects" element={<Projects/>}/>
+         <Route path="/projects/:id"element={<ProjectDetails />}/>
+
           <Route path="/sectors" element={<Sectors/>}/>
           <Route path="/career" element={<Career/>}/>
           <Route path="/clients" element={<Clients/>}/>
