@@ -49,7 +49,7 @@
   position: relative;
   min-height: 550px;
   overflow: hidden;
-  background-color: #223f79;
+  background-color: #4f71b6;
   isolation: isolate;
 }
 
@@ -257,5 +257,38 @@
   .hero-button,
   .hero-indicator {
     transition: none;
+  }
+}
+
+/* Add these rules to your hero CSS file, after .hero-description */
+
+.hero-category {
+  margin-bottom: 12px;
+  color: #fbbf24;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.hero-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  margin-top: 20px;
+}
+
+.hero-fact-label {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 12px;
+}
+
+.hero-fact-value {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .hero-facts {
+    gap: 10px 24px;
   }
 }
